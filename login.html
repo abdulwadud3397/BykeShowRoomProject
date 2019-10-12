@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./angularjs/angular.js"></script>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <style>
+        tab {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 18px slategray;
+        }
+
+        p {
+            text-shadow: 2px 2px 5px red;
+        }
+        h1{
+            text-shadow: 2px 2px 5px #02095D;
+        }
+        body{
+            background-image:url("https://www.desktopbackground.org/download/1920x1080/2011/07/18/236452_yamaha-yzf-r6-hd-wallpapers_1920x1080_h.jpg");
+            background-size: cover;
+        }
+        tt{
+            width: 600px;
+            align-self: auto;
+        }
+    </style>
+</head>
+<title>LoginPage</title>
+
+<body ng-app="myApp">
+    
+        
+        <h1><i>A.W WorldVision Login</i></h1>
+        <div ng-controller="Ctrl">
+            <form>
+                <table border="2" id="tab">
+                    <tr>
+                        <td >User Name:</td>
+                        <td id="tt"><input type="text" placeholder="enter your email" ng-model="username" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td id="tt"><input type="password" placeholder="enter your password" ng-model="password" id="password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="button" ng-click="submit()"
+                                class="btn btn-success">Submit</button></td>
+                        <td id="tt"><button type="reset" class="btn btn-warning">Reset</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><b>create account by completing the field <a href="#!/signUp" class="btn-link"
+                                        </b>Sign Up</a> </p> 
+                        </td> 
+                    </tr> 
+                </table> 
+            </form>
+        </div> 
+    
+</body>
+</html>
